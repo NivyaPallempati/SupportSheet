@@ -1,0 +1,21 @@
+<html>
+<body >
+    <center>
+                    <div class="signindiv" ng-controller="loginController">
+                      <form class="form-signin"> 
+                        <div id="profileimg">
+                          <img id="profile-img" class="profile-img-card" src="logo.jpg"> 
+                          </div>     
+                          <br>
+                        <input type="text" class="form-control" name="username" ng-model="username" placeholder="Username" required="" autofocus="" />
+                        <br>
+                        <input type="password" class="form-control" name="password" ng-model="password" placeholder="Password" required=""/>      
+                        <label class="checkbox">
+                          <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+                        </label>
+                        <button class="btn btn-lg btn-primary btn-block"ng-click="validate()" type="submit">Login</button>   
+                      </form>
+                    </div>
+                </center>
+</body>
+</html>

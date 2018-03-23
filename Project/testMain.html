@@ -1,0 +1,44 @@
+<html ng-app="supportsystem">
+    <head>
+        <base href="/" />
+            <link rel="stylesheet" href="teststyle.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.js"></script>
+            <script src="testmodule.js"></script>
+    </head>
+    <body>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container">
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="logo.jpg" width="100px" height="50px"></a>
+                      </div>
+                      <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" ng-show=enableAction data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b style="color:white;">Actions</b> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#" data-toggle="modal" data-target="#exampleModalLong">Add Client</a></li>
+                              <li><a href="#">Add User</a></li>
+                              <li><a href="#">Display Users</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="/login">Logout</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+        <a href="/login">red</a>
+        <a href="/dashboard">blue</a>
+        <div id="displaydiv" ng-view></div>
+    </body>
+    </html>
